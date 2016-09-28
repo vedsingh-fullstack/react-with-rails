@@ -1,0 +1,2229 @@
+  [1m[36m (89.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (186.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateComments (20160911184103)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160911184103"]]
+  [1m[35m (144.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-12 00:25:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (52.5ms)
+Completed 500 Internal Server Error in 3988ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160912-6492-1env4v2json):
+    2: <html>
+    3: <head>
+    4:   <title>ReactRails</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__267252534_38237796'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (822.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (832.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1892.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-12 00:29:43 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 1100ms
+
+LoadError (cannot load such file -- sass):
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___696980758_30073512'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (999.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (894.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2023.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-12 00:31:51 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 743ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160912-660-193084ojson):
+    2: <html>
+    3: <head>
+    4:   <title>ReactRails</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___712663500_21727608'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (764.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (736.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1761.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-17 23:02:14 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (27.5ms)
+Completed 500 Internal Server Error in 2816ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160917-3624-18zscqdjson):
+    2: <html>
+    3: <head>
+    4:   <title>ReactRails</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__224862283_27570816'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (812.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (798.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2343.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-17 23:03:25 +0530
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 85ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160917-3624-oa0xlnjson):
+    2: <html>
+    3: <head>
+    4:   <title>ReactRails</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__224862283_39897996'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (811.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (792.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1782.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-17 23:04:26 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (5.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (55.0ms)
+Completed 500 Internal Server Error in 820ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160917-1920-1vyamnxjson):
+    2: <html>
+    3: <head>
+    4:   <title>ReactRails</title>
+    5:   <%= stylesheet_link_tag  'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1970505_41709276'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (837.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (782.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1817.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-17 23:04:41 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 165ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160917-1920-u6heoujson):
+    2: <html>
+    3: <head>
+    4:   <title>ReactRails</title>
+    5:   <%= stylesheet_link_tag  'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1970505_41709276'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (823.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (797.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1800.0ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2016-09-17 23:04:54 +0530
+
+ActionController::RoutingError (No route matches [GET] "/comment/new"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (172.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1510.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (802.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1840.0ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-17 23:07:55 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (219.5ms)
+  Rendered comments/new.html.erb within layouts/application (257.0ms)
+Completed 500 Internal Server Error in 1015ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160917-1620-700uvnjson):
+    2: <html>
+    3: <head>
+    4:   <title>ReactRails</title>
+    5:   <%= stylesheet_link_tag  'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___511233542_30258708'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (823.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (832.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1806.0ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-17 23:31:59 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (283.0ms)
+  Rendered comments/new.html.erb within layouts/application (341.0ms)
+Completed 500 Internal Server Error in 1439ms
+
+LoadError (cannot load such file -- sass):
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__260957325_38714676'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (721.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (783.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1749.1ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-17 23:32:59 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (4.0ms)
+  Rendered comments/new.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 398ms
+
+LoadError (cannot load such file -- sass):
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__260957325_38714676'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (934.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (902.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1951.1ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-17 23:33:23 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (6.0ms)
+  Rendered comments/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 454ms
+
+LoadError (cannot load such file -- sass):
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__260957325_29414148'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (677.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (625.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1458.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-17 23:46:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 945ms
+
+LoadError (cannot load such file -- sass):
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__86815738_39201420'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (762.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (645.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1605.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-17 23:50:18 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 1725ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160917-4452-1dizt33json):
+    2: <html>
+    3: <head>
+    4:   <title>MyAjax</title>
+    5:   <%= stylesheet_link_tag    'application',media: 'all', 'data-turbolinks-track' => false %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    7:   <%= csrf_meta_tags %>
+    8: 
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__579411218_29013396'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (792.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (757.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1710.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-18 00:08:32 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 713ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160918-5060-1wdk70jjson):
+    2: <html>
+    3: <head>
+    4:   <title>MyAjax</title>
+    5:   <%= stylesheet_link_tag    'application',media: 'all', 'data-turbolinks-track' => false %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    7:   <%= csrf_meta_tags %>
+    8: 
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__796704301_42181476'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (748.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (875.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1817.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-18 00:20:49 +0530
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 96ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160918-5060-8qo8izjson):
+    2: <html>
+    3: <head>
+    4:   <title>MyAjax</title>
+    5:   <%= stylesheet_link_tag    'application',media: 'all', 'data-turbolinks-track' => false %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    7:   <%= csrf_meta_tags %>
+    8: 
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__796704301_42181476'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (690.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (705.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1590.1ms)
+
+
+Started PUT "/__web_console/repl_sessions/077e46ca7a26e0bdd50c7b2d09c282cc" for 127.0.0.1 at 2016-09-18 00:22:05 +0530
+
+
+Started GET "/pages/Index" for 127.0.0.1 at 2016-09-25 17:14:38 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/pages/Index"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (115.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (79.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1498.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1045.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2093.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 17:14:53 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 1012ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160925-5348-17r0hhxjson):
+    2: <html>
+    3: <head>
+    4:   <title>Demo</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1037036012_28742112'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (694.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (596.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1308.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 17:16:04 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/default.js" for 127.0.0.1 at 2016-09-25 17:16:04 +0530
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1261.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (62.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (803.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1755.1ms)
+
+
+Started GET "/stylesheets/default.css" for 127.0.0.1 at 2016-09-25 17:16:08 +0530
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1074.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (761.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1656.1ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-25 17:16:16 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (97.0ms)
+  Rendered comments/new.html.erb within layouts/application (178.0ms)
+Completed 200 OK in 218ms (Views: 207.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stylesheets/default.css" for 127.0.0.1 at 2016-09-25 17:16:16 +0530
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1102.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (759.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1749.1ms)
+
+
+Started GET "/javascripts/default.js" for 127.0.0.1 at 2016-09-25 17:16:20 +0530
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1097.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (787.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1731.1ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-25 17:17:36 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (134.0ms)
+  Rendered comments/new.html.erb within layouts/application (174.0ms)
+Completed 200 OK in 672ms (Views: 582.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stylesheets/default.css" for 127.0.0.1 at 2016-09-25 17:17:38 +0530
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1215.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (696.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1637.1ms)
+
+
+Started GET "/javascripts/default.js" for 127.0.0.1 at 2016-09-25 17:17:42 +0530
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1001.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (691.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1570.1ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-25 17:31:45 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (170.0ms)
+  Rendered comments/new.html.erb within layouts/application (196.0ms)
+Completed 200 OK in 663ms (Views: 591.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/default.js" for 127.0.0.1 at 2016-09-25 17:31:47 +0530
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1198.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (982.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2574.1ms)
+
+
+Started GET "/stylesheets/default.css" for 127.0.0.1 at 2016-09-25 17:31:52 +0530
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1489.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (995.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2319.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-25 17:34:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 538ms (Views: 474.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/default.js" for 127.0.0.1 at 2016-09-25 17:34:35 +0530
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (66.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1253.1ms)
+
+
+Started GET "/stylesheets/default.css" for 127.0.0.1 at 2016-09-25 17:34:36 +0530
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1223.1ms)
+
+
+Started GET "/stylesheets/default.css" for 127.0.0.1 at 2016-09-25 17:35:53 +0530
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1327.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 17:36:07 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (1.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 99ms (Views: 91.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/default.js" for 127.0.0.1 at 2016-09-25 17:36:07 +0530
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1112.1ms)
+
+
+Started GET "/stylesheets/default.css" for 127.0.0.1 at 2016-09-25 17:36:08 +0530
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1177.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 17:36:57 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 1155ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160925-5752-h6nkizjson):
+    2: <html>
+    3: <head>
+    4:   <title>Demo</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1009517757_29684460'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (871.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 17:41:19 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1796ms (Views: 1795.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-25 17:41:21 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-25 17:41:21 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-25 17:41:21 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-25 17:41:21 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-25 17:41:21 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-25 17:41:21 +0530
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2016-09-25 17:41:21 +0530
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-25 17:48:18 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (229.0ms)
+  Rendered comments/new.html.erb within layouts/application (260.0ms)
+Completed 200 OK in 413ms (Views: 393.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-09-25 17:48:28 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LNp+UzeUMkYL8smXAQPtLixVjnnzdetiiq9pwL1NmQ0p/c98xShTbJBacfsK79lZIaRr1i9ICad+dVAaGdsfUQ==", "comment"=>{"author"=>"HI ", "text"=>"New COmmenr"}, "commit"=>"Create Comment"}
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (47.0ms)[0m  INSERT INTO "comments" ("author", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["author", "HI "], ["text", "New COmmenr"], ["created_at", "2016-09-25 12:18:28.441607"], ["updated_at", "2016-09-25 12:18:28.441607"]]
+  [1m[36m (626.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments/1
+Completed 302 Found in 929ms (ActiveRecord: 674.0ms)
+
+
+Started GET "/comments/1" for 127.0.0.1 at 2016-09-25 17:48:29 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mComment Load (0.0ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 188ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 17:48:31 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-25 17:48:32 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (6.0ms)
+  Rendered comments/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 135ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 17:48:37 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-25 17:48:38 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (5.0ms)
+  Rendered comments/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 17:48:40 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 138ms (Views: 136.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-25 17:48:42 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered comments/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 157ms (Views: 155.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-09-25 17:48:46 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IOA5IXCMVVNWerqDxSItfFWxFBMIidTXzuBkENhfuc8lx4gOgjA0ec3SAu/OzhkLWEDxvNS0NhI6Ol3KfMk/kw==", "comment"=>{"author"=>"asdad", "text"=>"dasda"}, "commit"=>"Create Comment"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "comments" ("author", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "asdad"], ["text", "dasda"], ["created_at", "2016-09-25 12:18:46.714653"], ["updated_at", "2016-09-25 12:18:46.714653"]]
+  [1m[35m (546.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/comments/2
+Completed 302 Found in 568ms (ActiveRecord: 547.0ms)
+
+
+Started GET "/comments/2" for 127.0.0.1 at 2016-09-25 17:48:47 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered comments/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 87ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 17:48:49 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-09-25 17:48:50 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered comments/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 18:52:32 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 7450ms (Views: 7204.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-25 18:52:42 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-25 18:52:42 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:43 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-25 18:52:44 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 19:03:10 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (2059.1ms)
+Completed 500 Internal Server Error in 2082ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160925-6964-3y2zxbjson):
+    2: 
+    3: <h1>Listing Comments</h1>
+    4: <%= react_component 'Comments',{data: @comments} %>
+    5: <%= react_component('HelloMessage', {name: 'John'}, {prerender: true}) %>
+    6: 
+    7: 
+    8: 
+  app/views/comments/index.html.erb:5:in `_app_views_comments_index_html_erb___916815895_29639412'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (32.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (21.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1071.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 19:03:31 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (1.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 596ms (Views: 593.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-25 19:03:32 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-25 19:03:32 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-25 19:03:32 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:32 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:32 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:32 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:32 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:32 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:32 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:33 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:33 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:33 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:33 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:33 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:33 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:33 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-25 19:03:33 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 19:10:06 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 1403ms (Views: 1402.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-25 19:10:08 +0530
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-25 19:10:08 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-25 19:10:08 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:08 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:08 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:08 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:09 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 19:10:57 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (1.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 290ms (Views: 288.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:58 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:59 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-25 19:10:59 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 19:12:23 +0530
+Processing by CommentsController#index as HTML
+  Rendered comments/index.html.erb within layouts/application (1360.1ms)
+Completed 500 Internal Server Error in 1372ms
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( comments.js )` to `config/initializers/assets.rb` and restart your server):
+    1: <%= javascript_include_tag 'comments.js' %>
+    2: <p id="notice"><%= notice %></p>
+    3: 
+    4: <h1>Listing Comments</h1>
+  app/views/comments/index.html.erb:1:in `_app_views_comments_index_html_erb___916815895_39392544'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (912.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 19:14:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (1103.1ms)
+Completed 200 OK in 1828ms (Views: 1737.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-25 19:14:28 +0530
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-25 19:14:28 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-25 19:14:28 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:28 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/assets/comments.self-73898685fa1d0222a8222358ee9d7314052ab69a631c2ba5a0c69834149201b8.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:29 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-25 19:14:43 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (467.0ms)
+Completed 200 OK in 794ms (Views: 791.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/assets/comments.self-c73defcd1c1804aade3713d2e41909cb7bbd12bca8df25dfc92b2048c1063bd7.js?body=1" for 127.0.0.1 at 2016-09-25 19:14:44 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:17:21 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (186.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (1982.1ms)
+Completed 200 OK in 4699ms (Views: 4193.2ms | ActiveRecord: 186.0ms)
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-26 00:17:30 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:30 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-26 00:17:31 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-26 00:17:31 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:31 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:31 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/assets/comments.self-382e03baf2013e05441f3cb147328ba69e8c32a3c2a36a93f046fa977296863f.js?body=1" for 127.0.0.1 at 2016-09-26 00:17:32 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:31:13 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (512.0ms)
+Completed 200 OK in 1179ms (Views: 1177.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-26 00:31:14 +0530
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-26 00:31:14 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-26 00:31:15 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:15 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:15 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:15 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:15 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:15 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:15 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:15 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:15 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:16 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:16 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:16 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:16 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:16 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:16 +0530
+
+
+Started GET "/assets/comments.self-90afd6dcc7c3b689edb875c2b56bf3d8d10e70aec88feb82f0e86baae36cf3fb.js?body=1" for 127.0.0.1 at 2016-09-26 00:31:16 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:35:33 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (434.0ms)
+Completed 200 OK in 696ms (Views: 679.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-e95c4491b3c9925e037e9b5c6133712819ee51b6ed0fdec4105d7c486e099db1.js?body=1" for 127.0.0.1 at 2016-09-26 00:35:33 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:38:22 +0530
+Processing by CommentsController#index as HTML
+  Rendered comments/index.html.erb within layouts/application (2631.2ms)
+Completed 500 Internal Server Error in 2680ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160926-7820-kve1u3json):
+    1: <%= javascript_include_tag 'comments.js' %>
+    2: <p id="notice"><%= notice %></p>
+    3: 
+    4: <h1>Listing Comments</h1>
+  app/views/comments/index.html.erb:1:in `_app_views_comments_index_html_erb___234486120_28904160'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1035.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:39:03 +0530
+Processing by CommentsController#index as HTML
+  Rendered comments/index.html.erb within layouts/application (357.0ms)
+Completed 500 Internal Server Error in 366ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160926-7820-1rl5b8ejson):
+    1: <%= javascript_include_tag 'comments.js' %>
+    2: <p id="notice"><%= notice %></p>
+    3: 
+    4: <h1>Listing Comments</h1>
+  app/views/comments/index.html.erb:1:in `_app_views_comments_index_html_erb___234486120_28904160'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (565.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:39:31 +0530
+Processing by CommentsController#index as HTML
+  Rendered comments/index.html.erb within layouts/application (247.0ms)
+Completed 500 Internal Server Error in 257ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160926-7820-p1rz16json):
+    1: <%= javascript_include_tag 'comments.js' %>
+    2: <p id="notice"><%= notice %></p>
+    3: 
+    4: <h1>Listing Comments</h1>
+  app/views/comments/index.html.erb:1:in `_app_views_comments_index_html_erb___234486120_28904160'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (603.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:39:39 +0530
+Processing by CommentsController#index as HTML
+  Rendered comments/index.html.erb within layouts/application (277.0ms)
+Completed 500 Internal Server Error in 289ms
+
+ActionView::Template::Error (No such file or directory - C:/Users/admin/AppData/Local/Temp/execjs20160926-7820-unbrzkjson):
+    1: <%= javascript_include_tag 'comments.js' %>
+    2: <p id="notice"><%= notice %></p>
+    3: 
+    4: <h1>Listing Comments</h1>
+  app/views/comments/index.html.erb:1:in `_app_views_comments_index_html_erb___234486120_28904160'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (657.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:39:56 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (112.0ms)
+Completed 200 OK in 1503ms (Views: 1500.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:40:24 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (614.0ms)
+Completed 200 OK in 843ms (Views: 842.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-26 00:40:25 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-26 00:40:25 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-26 00:40:25 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:25 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:25 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:25 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:25 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:25 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:25 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:26 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:26 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:26 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:26 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:26 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:26 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:26 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:26 +0530
+
+
+Started GET "/assets/comments.self-43a12f53ce0d3686fffc71604e75d956a8669f07b038a54855cf45a2eee3d0bb.js?body=1" for 127.0.0.1 at 2016-09-26 00:40:26 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:41:25 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (352.0ms)
+Completed 200 OK in 571ms (Views: 567.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-26 00:41:25 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-26 00:41:25 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-26 00:41:25 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:25 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:25 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:25 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/assets/comments.self-5bb1449382059c14f7c375f84161af76d7a90c996507bd40750d1f10e42c99e5.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:26 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:41:39 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (1.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (362.0ms)
+Completed 200 OK in 592ms (Views: 590.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-26 00:41:39 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:39 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/assets/comments.self-cca3447cfda30df945ec4723848cabf1098a25b4080a03e905aff5237f980883.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:40 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:41:45 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (448.0ms)
+Completed 200 OK in 680ms (Views: 679.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:46 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:47 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:47 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:47 +0530
+
+
+Started GET "/assets/comments.self-e3cd89c99a4a5bc83d93a2d88a09fa3dfb361b90cf6a6587ce423e37e9520fbf.js?body=1" for 127.0.0.1 at 2016-09-26 00:41:47 +0530
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-09-26 00:43:00 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (312.0ms)
+Completed 200 OK in 526ms (Views: 524.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-141a6135140ff10b3468241c501deb7e8465745ca7aac7d87d84c15459ef868b.css?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/react.self-0d1d65e9a13d8e392fff76b5804914dcfb1688b1f8dedc9c8f8341123253d6db.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/react_ujs_mount.self-529311908dc83d0737d62f1a5eb4e2fa326f2040e2d2755b4fd78d2c09c5cc15.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:01 +0530
+
+
+Started GET "/assets/comments.self-9fc114976f9b2c5111223c38b565b60246136a61eadacb1b0d5e4e0179543909.js?body=1" for 127.0.0.1 at 2016-09-26 00:43:02 +0530
